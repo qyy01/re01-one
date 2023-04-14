@@ -4,24 +4,114 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>仿制</title>
+    <style>
+        body{
+            margin:0;
+            background-color: #eee;
+            height: 100vh;
+        }
+        /* *{
+            border: 1px solid black;
+        }*/
+        .flex{
+            display:flex;
+        }
+        .baiSe{
+            background-color: white ;
+        }
+        .yingYing{
+            box-shadow:rgb(0 0 0/20%) 0px 2px 1px -1px,
+            rgb(0 0 0/14%) 0px 1px 1px 0px,rgb(0 0 0/12%) 0px 1px;
+        }
+        .flex1{
+            flex:1;
+        }
+        .column{
+            flex-direction: column;
+        }
+        .mg8{
+            margin: 8px;
+        }
+        .mgr8{
+            margin-right: 8px;
+        }
+        .mgt8{
+            margin-top: 8px;
+        }
+        .daoHang{
+            padding:8px 16px;
+            border-bottom: #999 ;
+            font-size: 15px;
+            color: #848484;
+        }
+        /* 当屏幕宽度小于600px是改变css*/
+        @media(max-width:600px){
+            .ceBian{
+                display: none;
+            }
+            .neiRong{
+                flex-direction: column;
+            }
+            .shuJuQu{
+                flex-direction: column;
+            }
+        }
+    </style>
 </head>
-<body>
-    <div style="background-color: rgba(207, 223, 239, 0.901); text-align: center;padding:20px">
-        <h1>青衣的个人网页</h1>
-        <img src="https://i.328888.xyz/2023/04/12/iBBrIQ.jpeg" alt="青衣遥" width="80px" height="80px">
-    </div>
-    
-    <div style="max-width: 800px;margin:30px auto;padding:15px;line-height: 1.7;text-align: center;
-    background-color: aliceblue;">
-    <p style="font-family:Verdana, Geneva, Tahoma, sans-serif;font-size: large;color: #a84444;">
-        患难及困苦，是磨炼人格的最高学府。——苏格拉底</p>
-    <u><p style="text-align: right;color: #2ea4e4;">人的格局一大</p>
-    <u><P style="text-align: right;color: #2ea4e4;">就不会在生活琐碎里沉沦--青衣遥</P>
-    </div>
-    
-    <div style="font-size: small;text-align: right;">
-        <a href=".">青衣网址</a>
+<body class="flex">
+    <!--侧边栏-->
+    <div class="baiSe yingYing ceBian" style="width: 200px;z-index: 2;">
+        <!--头像栏-->
+        <div class="flex" style="padding: 10px; 
+        align-items: center;
+        justify-content: center;
+        border-bottom: 1px solid #999;">
+            <img src="https://i.328888.xyz/2023/04/12/iBBrIQ.jpeg" width="40px" height="40px" alt="">
+            <div>青衣遥</div>
+        </div>
+        <!--导航栏-->
+        <div class="flex1">
+            <div class="daoHang">导航</div>
+            <div class="daoHang">导航</div>
+            <div class="daoHang">导航</div>
+            <div class="daoHang">导航</div>
+            <div class="daoHang">导航</div>
+        </div>
+    </div>       
+    <!--主区域-->
+    <div class="flex1 flex column">
+        <!--头部栏-->
+        <div class="baiSe yingYing" style="height: 60px;z-index: 1;"></div>
+        <!--内容栏-->
+        <div class="flex1 flex neiRong" style="overflow: auto;">
+            <!--左区-->
+            <div class="flex column mg8" style="flex:3">
+                <!--数据区-->
+                <div class="flex shuJuQu">
+                    <div class="baiSe mgr8 flex1 yingYing" style="height: 120px;"></div>
+                    <div class="baiSe mgr8 flex1 yingYing" style="height: 120px;"></div>
+                    <div class="baiSe mgr8 flex1 yingYing" style="height: 120px;"></div>
+                    <div class="baiSe mgr8 flex1 yingYing" style="height: 120px;"></div>
+                </div>
+                <!--列表区-->
+                <div class="flex column">
+                    <div class="baiSe mgt8 yingYing" style="height:160px"></div>
+                    <div class="baiSe mgt8 yingYing" style="height:160px"></div>
+                    <div class="baiSe mgt8 yingYing" style="height:160px"></div>
+                    <div class="baiSe mgt8 yingYing" style="height:160px"></div>
+                    <div class="baiSe mgt8 yingYing" style="height:160px"></div>
+                    <div class="baiSe mgt8 yingYing" style="height:160px"></div>
+                </div>
+            </div>
+            <!--右区-->
+            <div class="flex column mgt8 mgr8" style="flex:1">
+                <!--提示区-->
+                <div class="baiSe yingYing" style="height: 150px;"></div>
+                <!--消息区-->
+                <div class="baiSe mgt8 yingYing" style="height:300px"></div>
+            </div>
+        </div>
     </div>
 </body>
 </html>
