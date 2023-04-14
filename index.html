@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>青衣</title>
+    <title>仿制</title>
     <style>
         body{
             margin:0;
@@ -48,7 +48,7 @@
         /* 当屏幕宽度小于600px是改变css*/
         @media(max-width:600px){
             .daoHang{
-                width:4px;
+                width: 4px;
             }
             .neiRong{
                 flex-direction: column;
@@ -61,17 +61,18 @@
 </head>
 <body class="flex">
     <!--侧边栏-->
-    <div class="baiSe yingYing ceBian" style="width: 200px;z-index: 2;">
+    <div class="baiSe yingYing ceBian" style="width: 200px;z-index: 2;background-color: antiquewhite;">
         <!--头像栏-->
         <div class="flex" style="padding: 10px; 
         align-items: center;
         justify-content: center;
-        border-bottom: 1px solid #999;">
-            <img src="https://i.328888.xyz/2023/04/12/iBBrIQ.jpeg" width="40px" height="40px" alt="">
+        border-bottom: 1px solid #999;
+        background-color: #dcd0d0;">
+            <img src="https://i.328888.xyz/2023/04/12/iBBrIQ.jpeg" width="40px" height="40px">
             <div>青衣遥</div>
         </div>
         <!--导航栏-->
-        <div class="flex1 daoHang">
+        <div class="flex1" style="background-color: rgb(245, 219, 186);">
             <div class="daoHang">导航</div>
             <div class="daoHang">导航</div>
             <div class="daoHang">导航</div>
@@ -80,9 +81,11 @@
         </div>
     </div>       
     <!--主区域-->
-    <div class="flex1 flex column">
+    <div class="flex1 flex column" style="background-color: rgb(243, 201, 145);">
         <!--头部栏-->
-        <div class="baiSe yingYing" style="height: 60px;z-index: 1;"></div>
+        <div class="baiSe yingYing" style="height: 60px;z-index: 1;">
+            <div><video src="https://a.sinaimg.cn/mintra/pic/2112130543/weibo_login.mp4" style="height: 60px;"></video></div>
+        </div>
         <!--内容栏-->
         <div class="flex1 flex neiRong" style="overflow: auto;">
             <!--左区-->
